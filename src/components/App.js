@@ -1,11 +1,10 @@
 import React from 'react'
-import './css/App.css'
-import Header from "./components/Header"
-import Sidebar from "./components/Sidebar"
-import SearchPage from "./components/SearchPage"
-import RecommendedVideos from "./components/RecommendedVideos"
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom"
-import { Avatar } from '@material-ui/core'
+import '../css/App.css'
+import Header from "./Header"
+import Sidebar from "./Sidebar"
+import SearchPage from "./SearchPage"
+import RecommendedVideos from "./RecommendedVideos"
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 
 function App() {
   return (
