@@ -6,6 +6,8 @@ function RecommendedVideos() {
     return (
         <div className="recommendedVideos">
             <h2>Recommended</h2>
+
+            {/* TODO -- pull back from an api */}
             <div className="recommendedVideos__videos">
                 <VideoCard 
                     title="MotoGP Classics: Laguna Seca 2008 (FULL RACE) | Motorsports on NBC"
@@ -14,7 +16,7 @@ function RecommendedVideos() {
                     channel="Motorsports on NBC"
                     channelImage="https://yt3.ggpht.com/a/AATXAJwqbcIMCvIBjhvJfmMCmg0QiTC9v9N_pQ_ZSfyO=s48-c-k-c0xffffffff-no-rj-mo"
                     image="https://i.ytimg.com/vi/fdYrPCFCv30/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLBRyd87Lm8dLpzW2-LB4CBhdOUDuQ"
-                    imageHover="https://i.ytimg.com/an_webp/fdYrPCFCv30/mqdefault_6s.webp?du=3000&sqp=CPjXiPkF&rs=AOn4CLDVDpJHl70F1t2uQvao1onjudRUzA"
+                    imageHover="https://i.ytimg.com/an_webp/ycwz4Ljm6_s/mqdefault_6s_480x270.webp?du=3000&sqp=CPCNjfkF&rs=AOn4CLAJsl9SHw_4_AhjsjnjTDLgRqpmag"
                 />
                 <VideoCard 
                     title="034Motorsport GTI-RS Concept to Reality Full Length"

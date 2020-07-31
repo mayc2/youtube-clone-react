@@ -17,3 +17,7 @@ code {
 .app_page{
   display: flex;
 }
+
+.search_page {
+  display: flex;
+}

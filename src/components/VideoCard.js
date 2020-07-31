@@ -1,13 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../css/VideoCard.css'
 import Avatar from "@material-ui/core/Avatar"
 
-function VideoCard({ title, views, channel, timestamp, channelImage, image}) {
+function VideoCard({ title, views, channel, timestamp, channelImage, image, imageHover}) {
+    const [thumbnail, setThumbnail] = useState(image)
+    
     return (
-        <div className="videoCard">
+        <div 
+            className="videoCard" 
+            onMouseOver={e => setThumbnail(imageHover ? imageHover : image)}
+            onMouseLeave={e => setThumbnail(image)}
+        >
             <img
                 className="videoCard_thumbnail"
-                src={image} 
+                src={thumbnail} 
                 alt=""/>
             <div className="videoCard__info">
                 <Avatar 

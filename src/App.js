@@ -1,18 +1,36 @@
 import React from 'react'
+import './css/App.css'
 import Header from "./components/Header"
 import Sidebar from "./components/Sidebar"
+import SearchPage from "./components/SearchPage"
 import RecommendedVideos from "./components/RecommendedVideos"
-import './css/App.css'
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom"
+import { Avatar } from '@material-ui/core'
 
 function App() {
   return (
     // BEM class naming convention
     <div className="app">
-      <Header />
-      <div className="app_page">
-        <Sidebar />
-        <RecommendedVideos />
-      </div>
+      <Router>
+        <Header />
+
+        <Switch>
+          <Route exact path="/">
+            <div className="app_page">
+              <Sidebar />
+              <RecommendedVideos />
+            </div>
+          </Route>
+          <Route path="/search/:searchTerm">
+            <div className="search_page">
+              <Sidebar />
+              <SearchPage />
+            </div>
+          </Route>
+        </Switch>
+      </Router>
+
+
 
     </div>
   );
